@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+ 
+  background: #F5F5DC;
+  color: #334155;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background: #0a0b0e;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f8fafc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Input box */
+.todo-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.todo-box form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.todo-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: rgba(255, 255, 255, 0.856);
+  color: #ac8573b6;
+  outline: none;
+}
+
+.todo-box button {
+  padding: 12px 18px;
+  background: #b4754b8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-box button:hover {
+  background: #e47023f3;
+}
+
+/* Stats cards */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.card {
+  flex: 1;
+  /* Clean white cards with a subtle shadow */
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.card h2 {
+  margin: 0;
+  color: #c47d2c;
+}
+
+/* Todo list */
+.todo-list {
+  margin-top: 20px;
+  padding-left: 0; /* Clears standard padding so list aligns nicely */
+}
+
+/* Ordered list item styling */
+.todo-item {
+  background: white;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: list-item; /* Tells browser to act like a list item */
+  list-style-position: inside; /* Puts the number inside the clean white block */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Wrapper wrapper to keep task details and buttons on opposite sides */
+.todo-content-wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 25px); /* Accounts for number marker width */
+  vertical-align: middle;
+}
+
+.todo-text-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.todo-item span {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* completed */
+.done span {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.actions button {
+  margin-left: 5px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.complete-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.complete-btn:hover {
+  background: #16a34a;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.empty {
+  text-align: center;
+  opacity: 0.7;
+}
+
+.meta {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+.day.active {
+  background: #0ea5e9;
+  color: white;
+  font-weight: bold;
+}
+
+.day-popup {
+  margin-top: 15px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.popup-task {
+  padding: 5px;
+  border-bottom: 1px solid #e2e8f0;
+}
